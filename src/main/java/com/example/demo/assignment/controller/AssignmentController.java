@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -22,4 +23,8 @@ public class AssignmentController {
 		return "Employee created";
 	}
 
+	@PutMapping("/employee")
+	public String updateEmployee() {
+		return "Employee updated";
+	}
 }
